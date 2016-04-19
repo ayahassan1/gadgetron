@@ -88,14 +88,15 @@ Install & configure IDEA
         * 225: options="" 
         * 224: mountSource=$shareName
     Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\MIDEA\VM_VE11B\.VirtualBox\Machines\mars\mars.xml':
-        * 53:
+        * 53::
+        
             <SharedFolders>
                 <SharedFolder name="SnapshotView" hostPath="C:\MIDEA\N4_VE11B_LATEST_20150530" writable="true"/>
             </SharedFolders>
 
 .. note::
 
-    Execute the 'IDEA.Net' application and select scanner:
+    Execute the 'IDEA.Net' application and select scanner::
 
         sys
         select PRISMA-XR (3)
