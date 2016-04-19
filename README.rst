@@ -38,7 +38,7 @@ Install requirements
 
    ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/redistVC2005-8.0.50727.42/vcredist_x86.exe
 
-6. Install ``Microsoft Windows SDK 6.1`` in 'C:\WinSDK\Windows\v6.1' (install custom, select developer Tools, default) from::
+6. Install ``Microsoft Windows SDK 6.1`` in 'C:\\WinSDK\\Windows\\v6.1' (install custom, select developer Tools, default) from::
 
    ftp://ftp.cea.fr/pub/unati/gadgetron/WindowsSDK-v6.1/Setup.exe
 
@@ -83,7 +83,7 @@ Install & configure IDEA
 
     Create a shortcut from 'C:\MIDEA\bin\IDEA.cmd' to the desktop (IDEA.Net) and update icon.
 
-13. ``Change the mont type`` from 'cifs' to 'vboxsf':
+13. ``Change the mount type`` from 'cifs' to 'vboxsf':
 
     - Edit file 'C:\MIDEA\N4_VE11B_LATEST_20150530\n4\pkg\MrApplications\MrIDEA\VMAddons\mntview.sh':
     
