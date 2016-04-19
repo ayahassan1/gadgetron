@@ -22,17 +22,17 @@ Install requirements
 
 1. ``Virtual clone drive``: install both utilities from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/VirtualCloneDrive-5.5/SetupVirtualCloneDrive5500.exe>
+    ftp://ftp.cea.fr/pub/unati/gadgetron/VirtualCloneDrive-5.5/SetupVirtualCloneDrive5500.exe
 
 2. ``Configure your file browser``: Option des dossiers et de recherche -> Affichage -> décocher utiliser assistant partage.
 
 3. ``Visual Studio 2008 Express``: install tool in 'C:\MSVS2008' (problem with SQL server install -> uncheck) from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/VS2008-Express-withSP1/vcsetup.exe>
+    ftp://ftp.cea.fr/pub/unati/gadgetron/VS2008-Express-withSP1/vcsetup.exe
 
 4. ``KB2538243``: install patch from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/KB2538243/vcredist_x64.exe>
+    ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/KB2538243/vcredist_x64.exe
 
 5. ``Redistributable 8.0.50727.42 VC++-2005 x86``: install redistributable::
 
@@ -50,7 +50,7 @@ Install requirements
 
    - Create folders'atlmfc\include' and 'atlmfc\lib\amd64' in 'C:\MSVS2008\VC'.
 
-   - Copy 'Wddk\inc\atl71' and 'Wddk\inc\mfc42' folders content in 'MSVS2008\VC\atlmfc\include':  
+   - Copy 'Wddk\inc\atl71' and 'Wddk\inc\mfc42' folders content in 'MSVS2008\VC\atlmfc\include' 
          * atlconv.h (keep atl)
          * atldef.h (keep atl)
 
@@ -66,7 +66,7 @@ Install optionals
 
 10. ``Install NSIS`` from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/NSIS/nsis-2.50-setup.exe.
+    ftp://ftp.cea.fr/pub/unati/gadgetron/NSIS/nsis-2.50-setup.exe
 
 11. ``Install NSIS editor`` from::
 
@@ -84,12 +84,12 @@ Install & configure IDEA
 
 13. ``Change the mont type`` from 'cifs' to 'vboxsf':
 
-    - Edit file 'C:\MIDEA\N4_VE11B_LATEST_20150530\n4\pkg\MrApplications\MrIDEA\VMAddons\mntview.sh':
+    - Edit file 'C:\MIDEA\N4_VE11B_LATEST_20150530\n4\pkg\MrApplications\MrIDEA\VMAddons\mntview.sh'
          * 144: MountType=vboxsf
          * 225: options="" 
          * 224: mountSource=$shareName
 
-    - Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\MIDEA\VM_VE11B\.VirtualBox\Machines\mars\mars.xml':
+    - Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\MIDEA\VM_VE11B\.VirtualBox\Machines\mars\mars.xml'
          * 53::
 
             <SharedFolders>
