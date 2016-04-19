@@ -22,35 +22,36 @@ Install requirements
 
 1. Install ``Virtual clone drive`` (both utilities) from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/VirtualCloneDrive-5.5/SetupVirtualCloneDrive5500.exe
+   ftp://ftp.cea.fr/pub/unati/gadgetron/VirtualCloneDrive-5.5/SetupVirtualCloneDrive5500.exe
 
 2. ``Configure your file browser``: Option des dossiers et de recherche -> Affichage -> décocher utiliser assistant partage.
 
 3. Install ``Visual Studio 2008 Express`` in 'C:\MSVS2008' (problem with SQL server install -> uncheck) from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/VS2008-Express-withSP1/vcsetup.exe
+   ftp://ftp.cea.fr/pub/unati/gadgetron/VS2008-Express-withSP1/vcsetup.exe
 
 4. Install ``KB2538243`` patch from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/KB2538243/vcredist_x64.exe
+   ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/KB2538243/vcredist_x64.exe
 
-5. `Install `redistributable 8.0.50727.42 VC++-2005 x86`` from::
+5. Install ``redistributable 8.0.50727.42 VC++-2005 x86`` from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/redistVC2005-8.0.50727.42/vcredist_x86.exe
+   ftp://ftp.cea.fr/pub/unati/gadgetron/Windows-redistributables/redistVC2005-8.0.50727.42/vcredist_x86.exe
 
 6. Install ``Microsoft Windows SDK 6.1`` in 'C:\WinSDK\Windows\v6.1' (install custom, select developer Tools, default) from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/WindowsSDK-v6.1/Setup.exe
+   ftp://ftp.cea.fr/pub/unati/gadgetron/WindowsSDK-v6.1/Setup.exe
 
 7. Install ``Windows driver kit 7.1`` using Virtual Clone Drive from::
 
-    ftp://ftp.cea.fr/pub/unati/gadgetron/WindowsWDDK-7.1/GRMWDK_EN_7600_1.ISO
+   ftp://ftp.cea.fr/pub/unati/gadgetron/WindowsWDDK-7.1/GRMWDK_EN_7600_1.ISO
 
 8. ``File manipulation``:
 
    - Create folders 'atlmfc\include' and 'atlmfc\lib\amd64' in 'C:\MSVS2008\VC'.
 
-   - Copy 'Wddk\inc\atl71' and 'Wddk\inc\mfc42' folders content in 'MSVS2008\VC\atlmfc\include'. 
+   - Copy 'Wddk\inc\atl71' and 'Wddk\inc\mfc42' folders content in 'MSVS2008\VC\atlmfc\include':
+   
          * atlconv.h (keep atl)
          * atldef.h (keep atl)
 
@@ -84,12 +85,14 @@ Install & configure IDEA
 
 13. ``Change the mont type`` from 'cifs' to 'vboxsf':
 
-    - Edit file 'C:\MIDEA\N4_VE11B_LATEST_20150530\n4\pkg\MrApplications\MrIDEA\VMAddons\mntview.sh'.
+    - Edit file 'C:\MIDEA\N4_VE11B_LATEST_20150530\n4\pkg\MrApplications\MrIDEA\VMAddons\mntview.sh':
+    
          * 144: MountType=vboxsf
          * 225: options="" 
          * 224: mountSource=$shareName
 
-    - Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\MIDEA\VM_VE11B\.VirtualBox\Machines\mars\mars.xml'.
+    - Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\MIDEA\VM_VE11B\.VirtualBox\Machines\mars\mars.xml':
+    
          * 53::
 
             <SharedFolders>
@@ -100,3 +103,6 @@ Install & configure IDEA
 
         sys
         select PRISMA-XR (3)
+
+
+
