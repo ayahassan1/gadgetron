@@ -26,7 +26,7 @@ Install requirements
 
 2. ``Configure your file browser``: Option des dossiers et de recherche -> Affichage -> décocher utiliser assistant partage.
 
-3. Install ``Visual Studio 2008 Express`` in 'C:\MSVS2008' (problem with SQL server install -> uncheck) from::
+3. Install ``Visual Studio 2008 Express`` in 'C:\\MSVS2008' (problem with SQL server install -> uncheck) from::
 
    ftp://ftp.cea.fr/pub/unati/gadgetron/VS2008-Express-withSP1/vcsetup.exe
 
@@ -48,16 +48,16 @@ Install requirements
 
 8. ``File manipulation``:
 
-   - Create folders 'atlmfc\include' and 'atlmfc\lib\amd64' in 'C:\MSVS2008\VC'.
+   - Create folders 'atlmfc\\include' and 'atlmfc\\lib\\amd64' in 'C:\\MSVS2008\\VC'.
 
-   - Copy 'Wddk\inc\atl71' and 'Wddk\inc\mfc42' folders content in 'MSVS2008\VC\atlmfc\include':
+   - Copy 'Wddk\\inc\\atl71' and 'Wddk\\inc\\mfc42' folders content in 'MSVS2008\\VC\atlmfc\\include':
    
          * atlconv.h (keep atl)
          * atldef.h (keep atl)
 
-   - Copy 'Wddk\lib\atl\i386' and 'Wddk\lib\mfc\i386' folders content in 'MSVS2008\VC\atlmfc\lib'.
+   - Copy 'Wddk\lib\atl\i386' and 'Wddk\lib\mfc\i386' folders content in 'MSVS2008\\VC\\atlmfc\\lib'.
 
-   - Copy 'Wddk\lib\atl\amd64' and 'Wddk\lib\mfc\amd64' folders content in 'MSVS2008\VC\atlmfc\lib\amd64'.
+   - Copy 'Wddk\lib\atl\amd64' and 'Wddk\lib\mfc\amd64' folders content in 'MSVS2008\\VC\\atlmfc\\lib\\amd64'.
 
 9. ``Activate the virtualization`` in the BIOS settings if not already activated: VT-x/AMD-V; SVM (Secure Virtual Machine).
 
@@ -81,17 +81,17 @@ Install & configure IDEA
 
     ftp://ftp.cea.fr/pub/unati/gadgetron/Siemens-IDEA-VE11/IDEA_VE11B.iso
 
-    Create a shortcut from 'C:\MIDEA\bin\IDEA.cmd' to the desktop (IDEA.Net) and update icon.
+    Create a shortcut from 'C:\\MIDEA\bin\\IDEA.cmd' to the desktop (IDEA.Net) and update icon.
 
 13. ``Change the mount type`` from 'cifs' to 'vboxsf':
 
-    - Edit file 'C:\MIDEA\N4_VE11B_LATEST_20150530\n4\pkg\MrApplications\MrIDEA\VMAddons\mntview.sh':
+    - Edit file 'C:\\MIDEA\\N4_VE11B_LATEST_20150530\\n4\\pkg\\MrApplications\\MrIDEA\\VMAddons\\mntview.sh':
     
          * 144: MountType=vboxsf
          * 225: options="" 
          * 224: mountSource=$shareName
 
-    - Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\MIDEA\VM_VE11B\.VirtualBox\Machines\mars\mars.xml':
+    - Add a 'SnapshotView' shared folder to VB mars machine pointing to 'C:\MIDEA\N4_VE11B_LATEST_20150530'. Edit 'C:\\MIDEA\\VM_VE11B\\.VirtualBox\\Machines\\mars\\mars.xml':
     
          * 53::
 
